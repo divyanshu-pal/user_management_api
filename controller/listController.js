@@ -66,7 +66,7 @@ const uploadUsers = async (req, res) => {
                 }
 
                 const unsubscribeToken = generateUnsubscribeToken();
-                console.log(unsubscribeToken);
+                
 
                 const userData = { name, email,unsubscribeToken,customProperties: {}};
                 for (const propTitle in customPropsMap) {
