@@ -11,7 +11,7 @@ const replacePlaceholders = (text, user) => {
     replacedText = replacedText.replace(/\[city\]/g, cityProperty.get('city'));
 
     const unsubscribeLink = `http://localhost:3000/api/unsubscribe?token=${user.unsubscribeToken}`;
-    console.log(unsubscribeLink);
+   
     replacedText = replacedText.replace(/\[unsubscribe_link\]/g, unsubscribeLink);
 
 
